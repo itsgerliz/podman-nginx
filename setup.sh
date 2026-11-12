@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TARGET_DIR=$HOME/podman-nginx
+TARGET_DIR=$HOME/nginx
 
 if [ -d $TARGET_DIR ]; then
 	echo "$TARGET_DIR exists, cannot proceed"
