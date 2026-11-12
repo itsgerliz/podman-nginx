@@ -1,5 +1,7 @@
 [Unit]
 Description=nginx web server
+# Avoid podman waiting for online network
+DefaultDependencies=false
 After=network.target
 
 [Container]
