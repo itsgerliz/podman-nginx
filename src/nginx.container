@@ -1,0 +1,25 @@
+[Unit]
+Description=nginx web server
+After=network-online.target
+
+[Container]
+Image=docker.io/library/nginx:mainline-alpine
+ContainerName=nginx
+
+# Exposed ports
+PublishPort=8443:443
+
+# Volumes
+Volume=%h/podman-nginx/conf.d/:/etc/nginx/conf.d/:ro
+Volume=%h/podman-nginx/certs/:/etc/nginx/certs:ro
+Volume=%h/podman-nginx/contents/:/srv/nginx/
+
+# Nginx reload
+ReloadCmd=/usr/sbin/nginx -s reload
+AutoUpdate=registry
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
