@@ -7,7 +7,7 @@ if [ -d $TARGET_DIR ]; then
 	exit 1
 fi
 
-mkdir $TARGET_DIR
+mkdir -p $TARGET_DIR
 cp ./src/nginx.container $TARGET_DIR/
 
 echo "Installed at $TARGET_DIR/nginx.container"
