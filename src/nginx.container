@@ -1,8 +1,10 @@
 [Unit]
 Description=nginx web server
+After=network.target
+
+[Quadlet]
 # Avoid podman waiting for online network
 DefaultDependencies=false
-After=network.target
 
 [Container]
 Image=docker.io/library/nginx:mainline-alpine
