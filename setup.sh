@@ -9,7 +9,7 @@ fi
 
 mkdir $TARGET_DIR
 cp -r ./src/certs/ $TARGET_DIR/
-cp -r ./src/conf.d/ $TARGET_DIR/
+cp -r ./src/configs/ $TARGET_DIR/
 cp -r ./src/contents/ $TARGET_DIR/
 
 echo "Management directory for this service was created at $TARGET_DIR"
