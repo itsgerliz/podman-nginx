@@ -12,7 +12,7 @@ ContainerName=nginx
 
 PublishPort=8443:443
 
-Volume=%h/nginx/conf.d/:/etc/nginx/conf.d/:ro
+Volume=%h/nginx/configs/:/etc/nginx/conf.d/:ro
 Volume=%h/nginx/certs/:/etc/nginx/certs:ro
 Volume=%h/nginx/contents/:/srv/nginx/
 
