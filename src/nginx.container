@@ -15,7 +15,7 @@ PublishPort=8443:443
 
 UserNS=keep-id:uid=101,gid=101
 
-Tmpfs=/var/cache/nginx:uid=101,gid=101
+Tmpfs=/var/cache/nginx/:U
 
 Volume=%h/nginx/configs/:/etc/nginx/conf.d/:ro
 Volume=%h/nginx/certs/:/etc/nginx/certs:ro
