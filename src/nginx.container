@@ -11,7 +11,7 @@ Image=docker.io/library/nginx:mainline-alpine
 ContainerName=nginx
 ReadOnly=true
 
-PublishPort=8443:443
+PublishPort=8443:8443
 
 UserNS=keep-id:uid=101,gid=101
 
