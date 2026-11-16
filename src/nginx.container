@@ -10,6 +10,8 @@ DefaultDependencies=false
 Image=docker.io/library/nginx:mainline-alpine
 ContainerName=nginx
 
+UserNS=keep-id:uid=101,gid=101
+
 PublishPort=8443:443
 
 Volume=%h/nginx/configs/:/etc/nginx/conf.d/:ro
