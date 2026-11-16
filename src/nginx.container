@@ -10,6 +10,7 @@ DefaultDependencies=false
 Image=docker.io/library/nginx:mainline-alpine
 ContainerName=nginx
 
+User=0:0
 UserNS=keep-id:uid=101,gid=101
 
 PublishPort=8443:443
